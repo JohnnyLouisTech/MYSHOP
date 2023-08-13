@@ -1,0 +1,338 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* Navigarion bar style Header */
+
+header{
+    display: flex;
+    padding: 0 5%px;
+    justify-content: space-between;
+    background-color: #f7f7f8;
+    box-shadow: 0px 10px 25px #00000027;
+    height: 70px;
+}
+
+header img{
+    padding-top: 12px;
+}
+
+.logo{
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.main-nav{
+    padding: 10px;
+    display: flex;
+    column-gap: 40px;
+    padding: 18px;
+}
+
+.main-nav a{
+    font-size: 20px;
+    color: #3C404A;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    padding-top: 5px;
+}
+
+.main-nav a:hover{
+    color: crimson;
+    transition-duration: 0.3s;
+}
+
+#selected{color: #5762D5;}
+header svg:hover{cursor: pointer;}
+#moon-icon{ transform: translateY(-5px); display: none;}
+#sun-icon{ transform: translateY(0px);}
+
+
+/* Intro section Main Content */
+h1{
+color: black;
+font-family:sans-serif;
+font-size: 1.5rem;
+text-decoration: ;
+}
+
+#selected{
+    color: #5762D5;
+}
+
+header svg:hover{
+    cursor: pointer;}
+
+
+
+#intro{
+    display: flex;
+    width: 1100px;
+    background-color: white;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+
+#intro h1{
+    font-size: 30px;
+}
+
+#intro p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #3C404A;
+}
+
+#intro a{
+    background-color: blue;
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    display: block;
+    animation: slide-up 1s;
+    width: fit-content;
+}
+
+@keyframes slide-up{
+    0%{transform: translateY(40px); opacity: 0;}
+    100%{transform: translateY(0px); opacity: 100%;}
+}
+
+#intro a:hover{
+    cursor: pointer;
+    background-color: purple;
+}
+
+video{
+    border-radius: 40px;
+    width: 50%;
+}
+
+/* Intro section nav category */
+#nav-cat{
+    background-color: crimson;
+    width: 100%;
+}
+
+#products-intro{
+    display: flex;
+    padding: 10px 40px;
+    gap: 10px 10px;
+    margin: auto;
+    width: 1100px;
+}
+
+.product-nav{
+    display: flex; 
+    justify-content:space-between;
+    width: 1100px;
+    margin: 15px auto;
+}
+
+.product-nav h3{
+    margin: 0;
+}
+
+.product-nav a, main a{
+    color: #5762D5;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.product-nav a:hover, main a:hover{
+    color: #fb6376;
+}
+
+.product-card{
+    background-color: #e9e6f0;
+    border-radius: 20px;
+    width: 250px;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    text-decoration: #5762D5;
+    color: black;
+}
+
+.product-detail{
+    padding: 20px 25px;
+}
+
+.review-con{
+    opacity: 0%;
+    position: absolute;
+    margin: 190px 0 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3;
+}
+
+.product-img{
+    border-radius: 20px 20px 0 0 ;
+    transition-duration: 0.3;
+}
+
+/* Footer of the page goes here */
+
+footer{
+    background-color: #2b2343;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px;
+}
+
+/*-------All Suits--------*/
+#product-con{
+    width: 1260px;
+    height: 1260px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.suit{
+    background-color: #fb6376;
+    height: 100%;
+    transition-duration: 0.3s;
+  
+}
+
+.suit:hover{
+    box-shadow: 10px 10px 30px #00000044;
+    cursor: pointer;
+    filter: grayscale(100);
+}
+
+.vertical{
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+
+.vertical:hover{
+    border-bottom: 10px 10px 30px #fb63756c;
+}
+
+#final-ele aside .title, #final-ele h5{color: #fb6376; cursor: pointer;}
+#final-ele aside .text{color: purple; cursor: pointer;}
+
+
+
+@media (max-width:1150px){
+    #intro h1{ font-size: 20px; color:#454fc1;}
+}
+
+/*---------Contact Form---*/
+
+.container {
+    background-color: #EEEFF1; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center; /* Center the content inside the container */
+    margin: auto; /* Center the container horizontally */
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    border: none;
+   
+}
+
+label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin: auto;
+    color: #007bff;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+    /* background-color: lightgray; */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+button:hover{
+    color: crimson;
+}
+
+
+/* /*--Profile Card-----/* */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+ 
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
